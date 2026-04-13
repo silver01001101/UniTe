@@ -7,10 +7,10 @@ import { useState } from "react";
 import logo from "../Untitled design(25).png";
 
 const links = [
-  { href: "/", label: "Internships" },
+  { href: "/internships", label: "Internships" },
   { href: "/rankings", label: "Rankings" },
   { href: "/chat", label: "Chat" },
-  { href: "/", label: "Outreach Programmes" },
+  { href: "/dei", label: "Outreach Programmes" },
 ];
 
 export default function Navbar() {
