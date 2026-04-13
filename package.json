@@ -1,5 +1,5 @@
 {
-  "name": "unite-temp",
+  "name": "unite",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,10 +21,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "better-sqlite3": "^12.9.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.3",
-    "pg": "^8.20.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
