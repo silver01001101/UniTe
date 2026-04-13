@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import logo from "../Untitled design(24).png";
+import logo from "../Untitled design(25).png";
 
 const links = [
-  { href: "/internships", label: "Internships" },
+  { href: "/", label: "Internships" },
   { href: "/rankings", label: "Rankings" },
   { href: "/chat", label: "Chat" },
-  { href: "/dei", label: "Outreach Programmes" },
+  { href: "/", label: "Outreach Programmes" },
 ];
 
 export default function Navbar() {
@@ -31,9 +31,6 @@ export default function Navbar() {
               priority
               className="h-10 w-10 rounded-full object-cover"
             />
-            <span className="text-2xl font-bold text-white tracking-tight">
-              Uni<span className="text-teal">Te</span>
-            </span>
           </Link>
 
           {/* Desktop nav */}

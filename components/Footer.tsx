@@ -16,10 +16,10 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-sm font-semibold uppercase tracking-wide mb-3">Explore</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/internships" className="hover:text-teal transition-colors">Internships</Link></li>
+              <li><Link href="/" className="hover:text-teal transition-colors">Internships</Link></li>
               <li><Link href="/rankings" className="hover:text-teal transition-colors">Rankings</Link></li>
               <li><Link href="/chat" className="hover:text-teal transition-colors">Career Chat</Link></li>
-              <li><Link href="/dei" className="hover:text-teal transition-colors">Outreach Programmes</Link></li>
+              <li><Link href="/" className="hover:text-teal transition-colors">Outreach Programmes</Link></li>
             </ul>
           </div>
           <div>
