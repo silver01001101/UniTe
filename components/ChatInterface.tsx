@@ -10,7 +10,7 @@ interface Message {
 const SUGGESTED_PROMPTS = [
   "What universities suit a career in finance?",
   "Best unis for software engineering internships?",
-  "Which UK unis have the strongest DEI programmes?",
+  "Which UK unis have the strongest outreach programmes?",
   "I want to work in consulting — where should I study?",
   "Compare UCL and LSE for Economics graduates",
   "Which university has the best graduate employment rate?",

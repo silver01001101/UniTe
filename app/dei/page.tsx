@@ -7,8 +7,8 @@ export default function DEIPage() {
       {/* Hero */}
       <section className="bg-navy text-white py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-teal text-sm font-semibold uppercase tracking-widest mb-3">Diversity · Equity · Inclusion</p>
-          <h1 className="text-4xl font-bold">Outreach & DEI Programmes</h1>
+          <p className="text-teal text-sm font-semibold uppercase tracking-widest mb-3">Opening Doors · Building Futures</p>
+          <h1 className="text-4xl font-bold">Outreach Programmes</h1>
           <p className="mt-4 text-gray-300 text-lg">
             Discover programmes designed to level the playing field — connecting underrepresented students with top careers in finance, law, tech, and beyond.
           </p>
@@ -33,7 +33,7 @@ export default function DEIPage() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-xl font-bold text-navy">Know a programme we&apos;re missing?</h2>
           <p className="text-gray-500 mt-2 text-sm">
-            UniTe&apos;s DEI database is community-driven. If you run or know of an outreach programme not listed here, we&apos;d love to include it.
+            UniTe&apos;s outreach database is community-driven. If you run or know of a programme not listed here, we&apos;d love to include it.
           </p>
           <a
             href="mailto:hello@unite.app"

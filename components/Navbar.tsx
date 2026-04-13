@@ -8,7 +8,7 @@ const links = [
   { href: "/internships", label: "Internships" },
   { href: "/rankings", label: "Rankings" },
   { href: "/chat", label: "Chat" },
-  { href: "/dei", label: "DEI Programs" },
+  { href: "/dei", label: "Outreach Programmes" },
 ];
 
 export default function Navbar() {

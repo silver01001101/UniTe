@@ -5,7 +5,7 @@ interface Internship {
   location: string;
   description: string;
   salary_display?: string | null;
-  url: string;
+  url: string | null;
   source: string;
   deadline?: string | null;
   tracker?: string | null;
@@ -71,14 +71,20 @@ export default function InternshipCard({ internship }: { internship: Internship 
       )}
 
       <div className="mt-4">
-        <a
-          href={internship.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block text-xs font-semibold uppercase tracking-wide text-teal border border-teal px-4 py-1.5 rounded hover:bg-teal hover:text-white transition-colors"
-        >
-          Apply
-        </a>
+        {internship.url ? (
+          <a
+            href={internship.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs font-semibold uppercase tracking-wide text-teal border border-teal px-4 py-1.5 rounded hover:bg-teal hover:text-white transition-colors"
+          >
+            Apply
+          </a>
+        ) : (
+          <span className="inline-block text-xs font-semibold uppercase tracking-wide text-gray-400 border border-gray-200 px-4 py-1.5 rounded">
+            No link available
+          </span>
+        )}
       </div>
     </div>
   );

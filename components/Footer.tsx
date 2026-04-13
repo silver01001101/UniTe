@@ -19,7 +19,7 @@ export default function Footer() {
               <li><Link href="/internships" className="hover:text-teal transition-colors">Internships</Link></li>
               <li><Link href="/rankings" className="hover:text-teal transition-colors">Rankings</Link></li>
               <li><Link href="/chat" className="hover:text-teal transition-colors">Career Chat</Link></li>
-              <li><Link href="/dei" className="hover:text-teal transition-colors">DEI Programs</Link></li>
+              <li><Link href="/dei" className="hover:text-teal transition-colors">Outreach Programmes</Link></li>
             </ul>
           </div>
           <div>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-sm font-semibold uppercase tracking-wide mb-3">About</h3>
             <p className="text-sm">
-              UniTe Score combines academic quality, employment outcomes, internship access, student satisfaction, and DEI provision into one transparent metric.
+              UniTe Score combines academic quality, employment outcomes, internship access, student satisfaction, and outreach provision into one transparent metric.
             </p>
           </div>
         </div>

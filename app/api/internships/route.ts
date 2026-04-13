@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
     salary_min: null as number | null,
     salary_max: null as number | null,
     salary_display: r.salary ?? null,
-    url: r.url ?? "#",
+    url: r.url ?? null,
     created: r.scraped_at ?? "",
     source: r.source,
     deadline: r.deadline ?? null,

@@ -20,7 +20,7 @@ const features = [
       </svg>
     ),
     title: "UniTe Rankings",
-    desc: "Our proprietary UniTe Score combines academic quality, graduate employment, internship access, student satisfaction, and DEI provision.",
+    desc: "Our proprietary UniTe Score combines academic quality, graduate employment, internship access, student satisfaction, and outreach provision.",
     cta: "See Rankings",
   },
   {
@@ -41,8 +41,8 @@ const features = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
-    title: "DEI & Outreach",
-    desc: "Discover diversity, equity, and inclusion programmes from upReach, Sutton Trust, SEO London, and more — designed to open doors.",
+    title: "Outreach Programmes",
+    desc: "Discover outreach programmes from upReach, Sutton Trust, SEO London, and more — designed to open doors for underrepresented students.",
     cta: "Explore Programs",
   },
 ];
@@ -52,7 +52,7 @@ const scoreFactors = [
   { label: "Graduate Employment", weight: "20%", desc: "Percentage of graduates in employment within 6 months" },
   { label: "Internship Access", weight: "25%", desc: "Proximity to major internship markets and employer density" },
   { label: "Student Satisfaction", weight: "15%", desc: "Overall student experience and campus rating" },
-  { label: "DEI Provision", weight: "10%", desc: "Number of active outreach and inclusion programmes" },
+  { label: "Outreach Provision", weight: "10%", desc: "Number of active outreach and inclusion programmes" },
 ];
 
 export default function HomePage() {
@@ -65,8 +65,7 @@ export default function HomePage() {
             Powered by real data
           </p>
           <h1 className="text-5xl sm:text-6xl font-bold leading-tight">
-            Find your path.<br />
-            <span className="text-teal">Study smart. Work better.</span>
+            the source of truth for your university tenure.
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
             UniTe brings together UK internships, university rankings, and AI career guidance into one platform — built to democratise access to opportunity.

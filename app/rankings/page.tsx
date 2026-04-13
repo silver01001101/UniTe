@@ -21,6 +21,19 @@ interface RankedUniversity {
 
 type SortKey = "score" | "cwur_national_rank" | "employment_rate" | "student_satisfaction";
 
+function SortIcon({
+  col,
+  sortBy,
+  sortAsc,
+}: {
+  col: SortKey;
+  sortBy: SortKey;
+  sortAsc: boolean;
+}) {
+  if (sortBy !== col) return <span className="text-gray-300 ml-1">↕</span>;
+  return <span className="text-teal ml-1">{sortAsc ? "↑" : "↓"}</span>;
+}
+
 export default function RankingsPage() {
   const [universities, setUniversities] = useState<RankedUniversity[]>([]);
   const [sortBy, setSortBy] = useState<SortKey>("score");
@@ -44,11 +57,6 @@ export default function RankingsPage() {
     const diff = (a[sortBy] as number) - (b[sortBy] as number);
     return sortAsc ? diff : -diff;
   });
-
-  function SortIcon({ col }: { col: SortKey }) {
-    if (sortBy !== col) return <span className="text-gray-300 ml-1">↕</span>;
-    return <span className="text-teal ml-1">{sortAsc ? "↑" : "↓"}</span>;
-  }
 
   const gradeColor: Record<string, string> = {
     "A+": "text-teal font-bold",
@@ -86,25 +94,25 @@ export default function RankingsPage() {
                     className="px-4 py-3 text-center font-medium cursor-pointer hover:text-teal select-none"
                     onClick={() => handleSort("score")}
                   >
-                    UniTe Score<SortIcon col="score" />
+                      UniTe Score<SortIcon col="score" sortBy={sortBy} sortAsc={sortAsc} />
                   </th>
                   <th
                     className="px-4 py-3 text-center font-medium cursor-pointer hover:text-teal select-none hidden md:table-cell"
                     onClick={() => handleSort("cwur_national_rank")}
                   >
-                    CWUR Rank<SortIcon col="cwur_national_rank" />
+                      CWUR Rank<SortIcon col="cwur_national_rank" sortBy={sortBy} sortAsc={sortAsc} />
                   </th>
                   <th
                     className="px-4 py-3 text-center font-medium cursor-pointer hover:text-teal select-none hidden lg:table-cell"
                     onClick={() => handleSort("employment_rate")}
                   >
-                    Employment<SortIcon col="employment_rate" />
+                      Employment<SortIcon col="employment_rate" sortBy={sortBy} sortAsc={sortAsc} />
                   </th>
                   <th
                     className="px-4 py-3 text-center font-medium cursor-pointer hover:text-teal select-none hidden lg:table-cell"
                     onClick={() => handleSort("student_satisfaction")}
                   >
-                    Satisfaction<SortIcon col="student_satisfaction" />
+                      Satisfaction<SortIcon col="student_satisfaction" sortBy={sortBy} sortAsc={sortAsc} />
                   </th>
                 </tr>
               </thead>

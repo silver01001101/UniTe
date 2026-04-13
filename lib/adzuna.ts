@@ -6,7 +6,7 @@ export interface AdzunaInternship {
   description: string;
   salary_min: number | null;
   salary_max: number | null;
-  url: string;
+  url: string | null;
   created: string;
   source: "adzuna";
 }
@@ -80,7 +80,7 @@ function getMockAdzunaInternships(
     description: `Exciting ${query || "internship"} opportunity at a leading firm in ${location}. Join our team and gain real-world experience.`,
     salary_min: 25000 + (i % 5) * 5000,
     salary_max: 35000 + (i % 5) * 5000,
-    url: "#",
+    url: null,
     created: new Date(Date.now() - i * 86400000).toISOString(),
     source: "adzuna" as const,
   }));
