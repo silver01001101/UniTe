@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import logo from "../Untitled design(24).png";
 
 const links = [
   { href: "/internships", label: "Internships" },
@@ -21,6 +23,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
+            <Image
+              src={logo}
+              alt="UniTe logo"
+              width={40}
+              height={40}
+              priority
+              className="h-10 w-10 rounded-full object-cover"
+            />
             <span className="text-2xl font-bold text-white tracking-tight">
               Uni<span className="text-teal">Te</span>
             </span>

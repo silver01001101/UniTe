@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "../Untitled design(24).png";
 
 const features = [
   {
@@ -61,6 +63,16 @@ export default function HomePage() {
       {/* Hero */}
       <section className="bg-navy text-white py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 flex justify-center">
+            <Image
+              src={logo}
+              alt="UniTe logo"
+              width={160}
+              height={160}
+              priority
+              className="h-32 w-32 sm:h-40 sm:w-40 rounded-2xl object-cover shadow-xl ring-4 ring-white/10"
+            />
+          </div>
           <p className="text-teal text-sm font-semibold uppercase tracking-widest mb-4">
             Powered by real data
           </p>
